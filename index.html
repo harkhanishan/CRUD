@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product management system</title>
+
+    <link href="index.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins&family=Roboto&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="part1">
+            <div class="header"> Product form</div>
+            
+            <div class="form">
+
+                <div class="image">
+                    <img src="images/startup_animation_07.webp" alt="image">
+                </div>
+
+                <form name="myForm" ons>
+                    <label for="p_id">iD:</label><br />
+                    <input type="text" id="p_id" name="p_id" placeholder="Add product id here" autocomplete="off" required><br />
+
+                    <label for="p_id">name:</label><br />
+                    <input type="text" id="p_name" name="p_name" placeholder="Add product name here" autocomplete="off" required><br />
+
+                    <label for="p_img">image:</label><br />
+                    <input type="file" id="p_img" name="p_img" placeholder="Add product image here"><br />
+
+                    <label for="p_price">price:</label><br />
+                    <input type="number" id="p_price" name="p_price" placeholder="Add product price here" min="1" max="999999" required><br />
+
+                    <label for="p_desc">description:</label><br />
+                    <textarea id="p_desc" name="p_desc" rows="4" cols="55" placeholder="Add product description here" required></textarea><br />
+
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="part2">
+            <div class="title">products</div>
+            <div class="products">
+                <div class="warn">No products in database</div>
+                <ul></ul>
+                
+            </div>
+            <!--<table>
+                <thead>
+                    <tr>
+                        <td>product ID</td>
+                        <td>product name</td>
+                        <td>price</td>
+                        <td>description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="errormsg">
+                        <td colspan="4">
+                            No data available
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>product ID</td>
+                        <td>product name</td>
+                        <td>price</td>
+                        <td>description</td>
+                    </tr>
+                    <tr>
+                        <td>product ID</td>
+                        <td>product name</td>
+                        <td>price</td>
+                        <td>description</td>
+                    </tr>
+                    <tr>
+                        <td>product ID</td>
+                        <td>product name</td>
+                        <td>price</td>
+                        <td>description</td>
+                    </tr>
+                    <tr>
+                        <td>product ID</td>
+                        <td>product name</td>
+                        <td>price</td>
+                        <td>description</td>
+                    </tr>
+                </tbody>
+            </table>-->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
